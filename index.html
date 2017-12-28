@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hangman</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- external JS -->
+	<script src = "game.js"></script>
+</head>
+
+<body>
+
+  <div class = "container">
+
+    	<div class = "jumbotron"> 
+    		<h1>Hangman Game</h1>
+    		<h5>guess a color</h5>
+    	</div>	
+
+    <div class="card border-primary mb-3">
+   	  <div class="card-header">Word to Guess</div>
+    	<div class="card-body">
+      	<h2 id = "wordToGuess"></h2>
+   		</div>
+  	</div>
+
+  	<div class="card border-primary mb-3">
+    	<div class="card-body">
+      	<p>Wrong guesses: <span id = "wrongGuesses"></span></p>
+   		</div>
+  	</div>
+
+  	<div class="card border-primary mb-3">
+    		<div class="card-body">
+      		<p>Guesses left: <span id= "numGuesses">9</span></p>
+   		 </div>
+  	</div>
+
+  	<div class="card border-primary mb-3">
+    		<div class="card-body">
+      		 <p>Wins: <span id = "wins">0</span></p>
+   		 </div>
+  	</div>
+
+  	<div class="card border-primary mb-3">
+    		<div class="card-body">
+      		<p>Loses: <span id = "losses">0</span></p>
+   		 </div>
+  	</div>
+  </div> <!--END container END -->
+</body>
+</html>
